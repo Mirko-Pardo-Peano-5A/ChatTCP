@@ -13,7 +13,6 @@ class socketWorker implements Runnable, InviaMessaggio, RiceviMessaggio  {
     private Socket client;
     private PrintWriter out = null;
 
-    //Constructor: inizializza le variabili
     socketWorker(Socket client) {
         this.client = client;
         gestoreMessaggi.addClient(this);
